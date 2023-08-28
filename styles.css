@@ -1,3 +1,7 @@
+:root {
+    --white: #FFFFFF;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -14,7 +18,7 @@ a:hover {
 article {
     padding:0 1em;
 }
-section{
+section {
     margin: 1em;
     padding: 1em;
 }
@@ -26,7 +30,7 @@ header {
     text-align: center;
     background-image: url('./images/bakcground-image.png');
     background-size: cover;
-    color: #FFFFFF;
+    color: var(--white);
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +58,7 @@ main section:not(:last-child) {
     border-bottom: 1px solid #ccc;
 }
 .fab {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--white);
     border-radius: 50%;
     font-size: 1.5em;
     width: 1.5em;
@@ -64,7 +68,7 @@ main section:not(:last-child) {
     text-align: center;
 }
 a .fab {
-    color: #FFFFFF;
+    color: var(--white);
 }
 .course, .skills {
     display: flex;
@@ -101,7 +105,7 @@ a .fab {
     color: #889499;
     text-decoration: underline;
 }
-ul.job-description li:before{
+ul.job-description li:before {
     content: "✔";
     padding-right: 0.5em;
     color: #509e98;
